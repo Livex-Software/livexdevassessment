@@ -25,20 +25,15 @@ namespace LivexDevTechnicalAssessment.Repository
 
             var returnModel = new List<CustomerInventoryModel>();
 
-            for (int i = 0; i < inventories.Count(); i++)
+            foreach (var item in inventories)
             {
-                int count = 0;
+                var count = data.Count(x => x.InventoryId == item.InventoryId);
 
-                foreach(var item in inventories)
+                returnModel.Add(new CustomerInventoryModel
                 {
-                    count = data.Count(x => x.InventoryId == item.InventoryId);
-
-                    returnModel.Add(new CustomerInventoryModel
-                    {
-                        InventoryName = item.InventoryName,
-                        Quanity = count
-                    });
-                }
+                    InventoryName = item.InventoryName,
+                    Quanity = count
+                });
             }
             return returnModel;
         }
