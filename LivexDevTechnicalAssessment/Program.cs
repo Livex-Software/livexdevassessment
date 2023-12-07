@@ -1,14 +1,17 @@
-namespace LivexDevTechnicalAssessment
+namespace LivexDevTechnicalAssessment.Web
 {
     public class Program
     {
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            ConfigurationManager configuration = builder.Configuration;
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            //Add DB context and Repository to container
+            builder.Services.AddDatabaseService(configuration);
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

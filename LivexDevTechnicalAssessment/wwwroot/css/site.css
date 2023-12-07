@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css");
+
 html {
   font-size: 14px;
 }
@@ -19,4 +21,16 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+/*Edit & Delete buttons*/
+
+.edit:hover {
+    color: limegreen;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: red;
+    cursor: pointer;
 }

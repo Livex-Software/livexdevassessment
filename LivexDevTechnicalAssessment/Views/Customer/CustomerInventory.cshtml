@@ -1,26 +1,24 @@
-﻿@using LivexDevTechnicalAssessment.Entities.Models
+﻿@using LivexDevTechnicalAssessment.Entities.ViewModels
 
 @*Our corresponding model that was returned*@
-@model IEnumerable<Inventory>
+@model IEnumerable<CustomerInventoryModel>
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Customer Inventory";
     int count = 1;
 }
 
 <div class="col-12">
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">Inventory List</h4>
+            <h4 class="card-title">Customer Inventory List</h4>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Item</th>
-                            <th>SKU</th>
-                            <th></th>
-                            <th></th>
+                            <th>Inventory</th>
+                            <th>Quantity</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -31,15 +29,7 @@
                                 <tr>
                                     <td>@count</td>
                                     <td>@item.InventoryName</td>
-                                    <td>@item.Sku</td>
-                                    <td>
-                                        <i class='bx bxs-edit-alt bx-md edit' onclick="action('Edit', 'Home', '@item.InventoryId')">
-                                        </i>
-                                    </td>
-
-                                    <td>
-                                        <i class='bx bxs-trash bx-md delete' onclick="action('Delete', 'Inventory', '@item.InventoryId')"></i>
-                                    </td>
+                                    <td>@item.Quanity</td>
                                 </tr>
                                 ++count;
                             }
@@ -57,4 +47,4 @@
     </div>
 </div>
 
-<button type="button" class="btn btn-primary btn-md mt-3" onclick="location.href='@Url.Action("Create", "Home")'" id="load1">Add +</button>
+<button type="button" class="btn btn-primary btn-md mt-3" onclick="location.href='@Url.Action("Index", "Customer")'" id="">Ok</button>

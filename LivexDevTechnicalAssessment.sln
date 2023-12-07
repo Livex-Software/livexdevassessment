@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivexDevTechnicalAssessment", "LivexDevTechnicalAssessment\LivexDevTechnicalAssessment.csproj", "{50D98A8A-FAE3-4A01-AC92-01B560D7A6D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LivexDevTechnicalAssessment.Web", "LivexDevTechnicalAssessment\LivexDevTechnicalAssessment.Web.csproj", "{50D98A8A-FAE3-4A01-AC92-01B560D7A6D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivexDevTechnicalAssessment.Entities", "LivexDevTechnicalAssessment.Models\LivexDevTechnicalAssessment.Entities.csproj", "{9B0402E4-9964-42C3-8D8D-732F25EA408F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivexDevTechnicalAssessment.Contracts", "LivexDevTechnicalAssessment.Contracts\LivexDevTechnicalAssessment.Contracts.csproj", "{C1418A2B-B72A-447B-BA58-786F647B024F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LivexDevTechnicalAssessment.Repository", "LivexDevTechnicalAssessment.Repository\LivexDevTechnicalAssessment.Repository.csproj", "{DE208784-F302-4BEA-B76A-BB60999B0F0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{50D98A8A-FAE3-4A01-AC92-01B560D7A6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50D98A8A-FAE3-4A01-AC92-01B560D7A6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50D98A8A-FAE3-4A01-AC92-01B560D7A6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0402E4-9964-42C3-8D8D-732F25EA408F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0402E4-9964-42C3-8D8D-732F25EA408F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0402E4-9964-42C3-8D8D-732F25EA408F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0402E4-9964-42C3-8D8D-732F25EA408F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1418A2B-B72A-447B-BA58-786F647B024F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1418A2B-B72A-447B-BA58-786F647B024F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1418A2B-B72A-447B-BA58-786F647B024F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1418A2B-B72A-447B-BA58-786F647B024F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE208784-F302-4BEA-B76A-BB60999B0F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE208784-F302-4BEA-B76A-BB60999B0F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE208784-F302-4BEA-B76A-BB60999B0F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE208784-F302-4BEA-B76A-BB60999B0F0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
